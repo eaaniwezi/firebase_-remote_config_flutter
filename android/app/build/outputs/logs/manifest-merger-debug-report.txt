@@ -54,6 +54,7 @@ MERGED from E:\Code\flutter_sport_news_app\android\app\src\main\AndroidManifest.
 MERGED from [:shared_preferences_android] E:\Code\flutter_sport_news_app\build\shared_preferences_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:firebase_remote_config] E:\Code\flutter_sport_news_app\build\firebase_remote_config\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core] E:\Code\flutter_sport_news_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:flutter_web_browser] E:\Code\flutter_sport_news_app\build\flutter_web_browser\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\c908042285857e83c74ccf1137a8c513\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-analytics:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\dc56254d4a8e1b8304ab31548714e367\jetified-firebase-analytics-21.1.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\c4044d383a84b6fd4e368b00d9abc9d9\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
@@ -63,6 +64,7 @@ MERGED from [com.google.android.gms:play-services-measurement-api:21.1.1] C:\Use
 MERGED from [com.google.firebase:firebase-abt:21.0.2] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\6eabd2f71e3a736e64af52a0f0df730e\jetified-firebase-abt-21.0.2\AndroidManifest.xml:2:1-19:12
 MERGED from [com.google.firebase:firebase-installations:17.0.3] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\7341b5503719715c47a6ef648b206d21\jetified-firebase-installations-17.0.3\AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.firebase:firebase-common:20.1.2] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\0bf1e75e61b54fd34ea6a315677f4ff0\jetified-firebase-common-20.1.2\AndroidManifest.xml:15:1-40:12
+MERGED from [androidx.browser:browser:1.2.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\3e6fc1bb811ba5e904ff23cd5c98e6d0\browser-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-measurement:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\737c379eb87be0ae361cb52bb65b2ee6\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:17:1-46:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\7f895a4eec4eae8319b29b3ad4f06e4c\jetified-play-services-measurement-sdk-21.1.1\AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.firebase:firebase-installations-interop:17.0.2] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\15334798885db8e6da0512fa8813614f\jetified-firebase-installations-interop-17.0.2\AndroidManifest.xml:15:1-23:12
@@ -87,8 +89,9 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\eaani\.gradle
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\c2f3324d229c9905ad716ad7a035202f\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\c0757301b26fd5da34e01247e7b7b435\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-components:17.0.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\ab2a72493a2b67184f7feededf91209d\jetified-firebase-components-17.0.1\AndroidManifest.xml:15:1-23:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\1849a8f8b3c59730a76547f7f17cd3ee\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\230c81371c5690192ba931960c52d6e5\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\761edc884b55da0f35d6f808f135107d\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\1849a8f8b3c59730a76547f7f17cd3ee\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\7a7bf271fc0d45f67b37535dab52fc6e\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\e658047da88351bb3b02ec33b6f4496f\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\aa4be723c9c7647adbe723e3753f4384\print-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -139,6 +142,8 @@ MERGED from [:firebase_remote_config] E:\Code\flutter_sport_news_app\build\fireb
 MERGED from [:firebase_remote_config] E:\Code\flutter_sport_news_app\build\firebase_remote_config\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] E:\Code\flutter_sport_news_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] E:\Code\flutter_sport_news_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_web_browser] E:\Code\flutter_sport_news_app\build\flutter_web_browser\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:flutter_web_browser] E:\Code\flutter_sport_news_app\build\flutter_web_browser\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\c908042285857e83c74ccf1137a8c513\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\c908042285857e83c74ccf1137a8c513\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-analytics:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\dc56254d4a8e1b8304ab31548714e367\jetified-firebase-analytics-21.1.1\AndroidManifest.xml:5:5-44
@@ -157,6 +162,8 @@ MERGED from [com.google.firebase:firebase-installations:17.0.3] C:\Users\eaani\.
 MERGED from [com.google.firebase:firebase-installations:17.0.3] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\7341b5503719715c47a6ef648b206d21\jetified-firebase-installations-17.0.3\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-common:20.1.2] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\0bf1e75e61b54fd34ea6a315677f4ff0\jetified-firebase-common-20.1.2\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-common:20.1.2] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\0bf1e75e61b54fd34ea6a315677f4ff0\jetified-firebase-common-20.1.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.2.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\3e6fc1bb811ba5e904ff23cd5c98e6d0\browser-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.2.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\3e6fc1bb811ba5e904ff23cd5c98e6d0\browser-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-measurement:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\737c379eb87be0ae361cb52bb65b2ee6\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\737c379eb87be0ae361cb52bb65b2ee6\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\7f895a4eec4eae8319b29b3ad4f06e4c\jetified-play-services-measurement-sdk-21.1.1\AndroidManifest.xml:20:5-44
@@ -205,10 +212,12 @@ MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\eaani\.gradle\caches\trans
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\c0757301b26fd5da34e01247e7b7b435\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-components:17.0.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\ab2a72493a2b67184f7feededf91209d\jetified-firebase-components-17.0.1\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:17.0.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\ab2a72493a2b67184f7feededf91209d\jetified-firebase-components-17.0.1\AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\1849a8f8b3c59730a76547f7f17cd3ee\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\1849a8f8b3c59730a76547f7f17cd3ee\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\230c81371c5690192ba931960c52d6e5\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\230c81371c5690192ba931960c52d6e5\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\761edc884b55da0f35d6f808f135107d\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\761edc884b55da0f35d6f808f135107d\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\1849a8f8b3c59730a76547f7f17cd3ee\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\1849a8f8b3c59730a76547f7f17cd3ee\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\7a7bf271fc0d45f67b37535dab52fc6e\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\7a7bf271fc0d45f67b37535dab52fc6e\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\e658047da88351bb3b02ec33b6f4496f\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
