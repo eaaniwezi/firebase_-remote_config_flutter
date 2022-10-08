@@ -5,6 +5,7 @@ import 'dart:ui';
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter_sport_news_app/models/news.dart';
 import 'package:flutter_web_browser/flutter_web_browser.dart';
 import 'package:flutter_sport_news_app/widgets/news_card_widget.dart';
@@ -27,11 +28,11 @@ class NewsDetailScreen extends StatelessWidget {
               <Widget>[
                 _description(),
                 _divider(),
-                Column(
-                    children: newsList
-                        .where((element) => element.id != newsModel.id)
-                        .map((news) => NewsCardWidget(newsModel: news))
-                        .toList())
+                // Column(
+                //     children: newsList
+                //         .where((element) => element.id != newsModel.id)
+                //         .map((news) => NewsCardWidget(newsModel: news))
+                //         .toList())
               ],
             ),
           ),
@@ -49,50 +50,19 @@ class NewsDetailScreen extends StatelessWidget {
 
   _description() {
     return Padding(
-      padding: const EdgeInsets.all(10),
-      child: RichText(
-        text: TextSpan(
-          children: [
-            TextSpan(
-              text: newsModel.description! + "  ",
-              style: TextStyle(
-                  fontSize: 17,
-                  color: Colors.black,
-                  fontWeight: FontWeight.w600,
-                  fontStyle: FontStyle.italic),
-            ),
-            TextSpan(
-              text: "Read More",
-              style: TextStyle(
-                  fontSize: 17,
-                  color: Colors.purple,
-                  fontWeight: FontWeight.w600,
-                  fontStyle: FontStyle.italic,
-                  decoration: TextDecoration.underline),
-              recognizer: TapGestureRecognizer()
-                ..onTap = () async {
-                  if (Platform.isAndroid) {
-                    FlutterWebBrowser.openWebPage(
-                      url: newsModel.url.toString(),
-                    );
-                  } else if (Platform.isIOS) {
-                    FlutterWebBrowser.openWebPage(
-                      url: newsModel.url.toString(),
-                    );
-                  } else {
-                    await FlutterWebBrowser.openWebPage(
-                      url: newsModel.url.toString(),
-                    );
-                  }
-                },
-            ),
-          ],
-        ),
-      ),
-    );
+        padding: const EdgeInsets.all(10),
+        child: Text(
+          newsModel.description!,
+          style: TextStyle(
+              fontSize: 17,
+              color: Colors.black,
+              fontWeight: FontWeight.w600,
+              fontStyle: FontStyle.italic),
+        ));
   }
 
   SliverAppBar _appBar(context) {
+    final router = AutoRouter.of(context);
     return SliverAppBar(
       elevation: 0,
       centerTitle: true,
@@ -103,9 +73,7 @@ class NewsDetailScreen extends StatelessWidget {
         background: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                // colorFilter: ColorFilter.mode(Theme.of(context).primaryColor.withOpacity(0.7), BlendMode.color),
                 image: NetworkImage(newsModel.picture.toString()),
-                // fit: BoxFit.fill,
               ),
             ),
             child: ClipRRect(
@@ -139,7 +107,7 @@ class NewsDetailScreen extends StatelessWidget {
           Icons.arrow_back_rounded,
         ),
         onPressed: () {
-          Navigator.pop(context);
+          router.pop();
         },
       ),
       title: Text(

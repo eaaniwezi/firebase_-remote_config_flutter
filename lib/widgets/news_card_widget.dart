@@ -2,9 +2,10 @@
 
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter_sport_news_app/models/news.dart';
 import 'package:transparent_image/transparent_image.dart';
-import 'package:flutter_sport_news_app/screens/news_detail_screen.dart';
+import 'package:flutter_sport_news_app/routes/app_router.gr.dart';
 
 class NewsCardWidget extends StatelessWidget {
   final News newsModel;
@@ -12,6 +13,7 @@ class NewsCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final router = AutoRouter.of(context);
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Material(
@@ -19,8 +21,7 @@ class NewsCardWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         child: InkWell(
           onTap: () {
-            Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => NewsDetailScreen(newsModel: newsModel)));
+             router.push(NewsDetailScreenRoute(newsModel: newsModel));
           },
           child: Container(
             height: MediaQuery.of(context).size.height * 0.2,
