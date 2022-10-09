@@ -24,15 +24,9 @@ class RemoteConfigService {
   RemoteConfigService({FirebaseRemoteConfig? remoteConfig})
       : remoteConfig = remoteConfig!;
 
-  String get firebaseConfigPath 
-    => remoteConfig.getString(_path);
-  
-
-  
+  String get firebaseConfigPath => remoteConfig.getString(_path);
 
   Future initialise({required SharedPreferences prefs}) async {
-    // print("firebaseConfigPath");
-    // print(firebaseConfigPath);
     try {
       await remoteConfig.setDefaults(defaults);
       await _fetchAndActivate();

@@ -1,14 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'dart:io';
 import 'dart:ui';
-
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter_sport_news_app/models/news.dart';
-import 'package:flutter_web_browser/flutter_web_browser.dart';
-import 'package:flutter_sport_news_app/widgets/news_card_widget.dart';
 
 class NewsDetailScreen extends StatelessWidget {
   final News newsModel;
@@ -28,11 +23,6 @@ class NewsDetailScreen extends StatelessWidget {
               <Widget>[
                 _description(),
                 _divider(),
-                // Column(
-                //     children: newsList
-                //         .where((element) => element.id != newsModel.id)
-                //         .map((news) => NewsCardWidget(newsModel: news))
-                //         .toList())
               ],
             ),
           ),

@@ -25,8 +25,8 @@ class RemoteConfigBloc extends Bloc<RemoteConfigEvent, RemoteConfigState> {
     if (event is InitialEvent) {
       try {
         yield GettingRemoteConfig();
-        var configPath = remoteConfig!.getString("web_view_urld");
-        final savedPath = prefs!.getString("web_view_urld");
+        var configPath = remoteConfig!.getString("web_view_url");
+        final savedPath = prefs!.getString("web_view_url");
 
         if (savedPath == null) {
           await prefs!.setString("web_view_url", configPath);
