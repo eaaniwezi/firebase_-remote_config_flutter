@@ -1,18 +1,23 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sport_news_app/services/remote_config_service.dart';
 import 'injection_container.dart' as di;
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_sport_news_app/routes/app_router.gr.dart';
 import 'package:flutter_sport_news_app/routes/route_observer.dart';
+import 'package:flutter_sport_news_app/bloc/remote_config/remote_config_bloc.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   await di.init();
-  // final remoteConfigService = RemoteConfigService();
-  runApp(MyApp());
+  runApp(MultiBlocProvider(
+    providers: [
+      BlocProvider(create: (_) => di.sl<RemoteConfigBloc>()..add(InitialEvent())),
+    ],
+    child: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {

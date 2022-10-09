@@ -4,10 +4,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 
-const String _path = "show_main_banner";
+const String _path = "web_view_url";
 
 class RemoteConfigService {
-  final FirebaseRemoteConfig _remoteConfig;
+  final FirebaseRemoteConfig remoteConfig;
   final defaults = <String, dynamic>{_path: ""};
 
   static RemoteConfigService? _instance;
@@ -22,13 +22,19 @@ class RemoteConfigService {
   }
 
   RemoteConfigService({FirebaseRemoteConfig? remoteConfig})
-      : _remoteConfig = remoteConfig!;
+      : remoteConfig = remoteConfig!;
 
-  String get firebaseConfigPath => _remoteConfig.getString(_path);
+  String get firebaseConfigPath 
+    => remoteConfig.getString(_path);
+  
+
+  
 
   Future initialise({required SharedPreferences prefs}) async {
+    // print("firebaseConfigPath");
+    // print(firebaseConfigPath);
     try {
-      await _remoteConfig.setDefaults(defaults);
+      await remoteConfig.setDefaults(defaults);
       await _fetchAndActivate();
     } on FirebaseException catch (e) {
       print('Remote config fetch throttled: $e');
@@ -39,7 +45,7 @@ class RemoteConfigService {
   }
 
   Future _fetchAndActivate() async {
-    await _remoteConfig.fetch();
-    await _remoteConfig.fetchAndActivate();
+    await remoteConfig.fetch();
+    await remoteConfig.fetchAndActivate();
   }
 }
