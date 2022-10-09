@@ -34,13 +34,13 @@ class RemoteConfigBloc extends Bloc<RemoteConfigEvent, RemoteConfigState> {
           if (configPath.isEmpty) {
             yield EmptyPathState();
           } else {
-            yield SuccessLoadingConfig();
+            yield SuccessLoadingConfig(configPath: configPath);
           }
         } else {
           if (savedPath.isEmpty) {
             yield EmptyPathState();
           } else {
-            yield SuccessLoadingConfig();
+            yield SuccessLoadingConfig(configPath: savedPath);
           }
         }
       } catch (e) {

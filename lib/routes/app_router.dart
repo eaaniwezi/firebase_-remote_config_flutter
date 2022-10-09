@@ -10,6 +10,5 @@ import 'package:flutter_sport_news_app/screens/welcome_screen.dart';
   AutoRoute(page: WelcomeScreen, initial: true),
   AutoRoute(page: WebViewScreen, path: '/web-view'),
   AutoRoute(page: NewsDetailScreen, path: '/news-detail'),
-
 ])
 class $AppRouter {}

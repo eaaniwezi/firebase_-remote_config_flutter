@@ -34,8 +34,10 @@ class AppRouter extends _i5.RootStackRouter {
           routeData: routeData, child: const _i2.WelcomeScreen());
     },
     WebViewScreenRoute.name: (routeData) {
+      final args = routeData.argsAs<WebViewScreenRouteArgs>();
       return _i5.MaterialPageX<dynamic>(
-          routeData: routeData, child: _i3.WebViewScreen());
+          routeData: routeData,
+          child: _i3.WebViewScreen(key: args.key, url: args.url));
     },
     NewsDetailScreenRoute.name: (routeData) {
       final args = routeData.argsAs<NewsDetailScreenRouteArgs>();
@@ -73,11 +75,26 @@ class WelcomeScreenRoute extends _i5.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.WebViewScreen]
-class WebViewScreenRoute extends _i5.PageRouteInfo<void> {
-  const WebViewScreenRoute()
-      : super(WebViewScreenRoute.name, path: '/web-view');
+class WebViewScreenRoute extends _i5.PageRouteInfo<WebViewScreenRouteArgs> {
+  WebViewScreenRoute({_i6.Key? key, required String url})
+      : super(WebViewScreenRoute.name,
+            path: '/web-view',
+            args: WebViewScreenRouteArgs(key: key, url: url));
 
   static const String name = 'WebViewScreenRoute';
+}
+
+class WebViewScreenRouteArgs {
+  const WebViewScreenRouteArgs({this.key, required this.url});
+
+  final _i6.Key? key;
+
+  final String url;
+
+  @override
+  String toString() {
+    return 'WebViewScreenRouteArgs{key: $key, url: $url}';
+  }
 }
 
 /// generated route for
