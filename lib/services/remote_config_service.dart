@@ -2,6 +2,7 @@
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 const String _path = "web_view_url";
 
@@ -24,7 +25,7 @@ class RemoteConfigService {
 
   String get firebaseConfigPath => remoteConfig.getString(_path);
 
-  Future initialise() async {
+  Future initialise({required SharedPreferences prefs}) async {
     try {
       await remoteConfig.setDefaults(defaults);
       await _fetchAndActivate();

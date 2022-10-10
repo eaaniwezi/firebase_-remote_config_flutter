@@ -5,20 +5,18 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter_sport_news_app/services/device_details_service.dart';
 
-
 part 'remote_config_event.dart';
 part 'remote_config_state.dart';
 
 class RemoteConfigBloc extends Bloc<RemoteConfigEvent, RemoteConfigState> {
-  final DeviceDetailsService deviceDetailsService;
-  final FirebaseRemoteConfig? remoteConfig;
+
+  final FirebaseRemoteConfig remoteConfig;
   final SharedPreferences? prefs;
   RemoteConfigBloc({
     this.prefs,
-    this.remoteConfig,
-    required this.deviceDetailsService,
+    required this.remoteConfig,
     required RemoteConfigState initialState,
-  })  : assert(deviceDetailsService != null),
+  })  : assert(remoteConfig != null),
         super(initialState) {
     add(InitialEvent());
   }
@@ -27,30 +25,30 @@ class RemoteConfigBloc extends Bloc<RemoteConfigEvent, RemoteConfigState> {
     if (event is InitialEvent) {
       try {
         yield GettingRemoteConfig();
-        final brandName = await deviceDetailsService.getBrandName();
-        final checkSimCard = await deviceDetailsService.checkSimCard();
-        var configPath = remoteConfig!.getString("web_view_url");
+        final brandName = await DeviceDetailsService().getBrandName();
+        final checkSimCard = await DeviceDetailsService().checkSimCard();
+        var configPath = remoteConfig.getString("web_view_url");
         final savedPath = prefs!.getString("web_view_url");
 
-      
-        if (savedPath == null){
+        if (savedPath == null) {
           await prefs!.setString("web_view_url", configPath);
-          
-          if (configPath.isEmpty || brandName.contains("google") || checkSimCard.isEmpty){
-             yield ShowStubState();
+
+          if ((configPath.isEmpty) ||
+              (brandName.contains("google")) ||
+              (checkSimCard.isEmpty)) {
+            yield ShowStubState();
           } else {
-               yield ShowWebViewState(configPath: configPath);
+            yield ShowWebViewState(configPath: configPath);
           }
         } else {
-         if (savedPath.isEmpty || brandName.contains("google") || checkSimCard.isEmpty){
-             yield ShowStubState();
+          if ((savedPath.isEmpty) ||
+              (brandName.contains("google")) ||
+              (checkSimCard.isEmpty)) {
+            yield ShowStubState();
           } else {
-               yield ShowWebViewState(configPath: configPath);
+            yield ShowWebViewState(configPath: configPath);
           }
         }
-
-
-
       } catch (e) {
         yield ErrorGettingRemoteConfig();
       }
