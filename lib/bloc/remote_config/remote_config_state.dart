@@ -13,11 +13,11 @@ class RemoteConfigInitial extends RemoteConfigState {}
 
 class GettingRemoteConfig extends RemoteConfigState {}
 
-class EmptyPathState extends RemoteConfigState {}
+class ShowStubState extends RemoteConfigState {}
 
-class SuccessLoadingConfig extends RemoteConfigState {
+class ShowWebViewState extends RemoteConfigState {
   final String configPath;
-  SuccessLoadingConfig({
+  ShowWebViewState({
     required this.configPath,
   });
 }

@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_sport_news_app/bloc/remote_config/remote_config_bloc.dart';
 import 'package:flutter_sport_news_app/routes/app_router.gr.dart';
+import 'package:flutter_sport_news_app/bloc/remote_config/remote_config_bloc.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -14,10 +14,10 @@ class WelcomeScreen extends StatelessWidget {
     final router = AutoRouter.of(context);
     return BlocConsumer<RemoteConfigBloc, RemoteConfigState>(
       listener: (context, state) {
-        if (state is EmptyPathState) {
+        if (state is ShowStubState) {
           router.pushNamed("/news");
         }
-        if (state is SuccessLoadingConfig) {
+        if (state is ShowWebViewState) {
           router.push(WebViewScreenRoute(url: state.configPath));
         }
       },

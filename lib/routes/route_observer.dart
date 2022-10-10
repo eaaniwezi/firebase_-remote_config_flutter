@@ -1,7 +1,7 @@
 // ignore_for_file: avoid_print
 
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:auto_route/auto_route.dart';
 
 class MyObserver extends AutoRouterObserver {
   @override

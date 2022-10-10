@@ -54,6 +54,8 @@ MERGED from E:\Code\flutter_sport_news_app\android\app\src\main\AndroidManifest.
 MERGED from [:shared_preferences_android] E:\Code\flutter_sport_news_app\build\shared_preferences_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:firebase_remote_config] E:\Code\flutter_sport_news_app\build\firebase_remote_config\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core] E:\Code\flutter_sport_news_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:carrier_info] E:\Code\flutter_sport_news_app\build\carrier_info\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-12:12
+MERGED from [:device_info_plus] E:\Code\flutter_sport_news_app\build\device_info_plus\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:webview_flutter_android] E:\Code\flutter_sport_news_app\build\webview_flutter_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_web_browser] E:\Code\flutter_sport_news_app\build\flutter_web_browser\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\c908042285857e83c74ccf1137a8c513\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
@@ -144,6 +146,10 @@ MERGED from [:firebase_remote_config] E:\Code\flutter_sport_news_app\build\fireb
 MERGED from [:firebase_remote_config] E:\Code\flutter_sport_news_app\build\firebase_remote_config\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] E:\Code\flutter_sport_news_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] E:\Code\flutter_sport_news_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:carrier_info] E:\Code\flutter_sport_news_app\build\carrier_info\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:carrier_info] E:\Code\flutter_sport_news_app\build\carrier_info\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:device_info_plus] E:\Code\flutter_sport_news_app\build\device_info_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:device_info_plus] E:\Code\flutter_sport_news_app\build\device_info_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:webview_flutter_android] E:\Code\flutter_sport_news_app\build\webview_flutter_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:webview_flutter_android] E:\Code\flutter_sport_news_app\build\webview_flutter_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_web_browser] E:\Code\flutter_sport_news_app\build\flutter_web_browser\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
@@ -276,6 +282,34 @@ ADDED from [:firebase_core] E:\Code\flutter_sport_news_app\build\firebase_core\i
 		ADDED from [:firebase_core] E:\Code\flutter_sport_news_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:firebase_core] E:\Code\flutter_sport_news_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from [:carrier_info] E:\Code\flutter_sport_news_app\build\carrier_info\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-75
+	android:name
+		ADDED from [:carrier_info] E:\Code\flutter_sport_news_app\build\carrier_info\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-72
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:carrier_info] E:\Code\flutter_sport_news_app\build\carrier_info\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-79
+MERGED from [com.google.firebase:firebase-config:21.1.2] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\fab90153a255270ac4e1adccbc47a150\jetified-firebase-config-21.1.2\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-config:21.1.2] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\fab90153a255270ac4e1adccbc47a150\jetified-firebase-config-21.1.2\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\3c1382f7c0fb1fe6d8fadbbc82427811\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\3c1382f7c0fb1fe6d8fadbbc82427811\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.3] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\7341b5503719715c47a6ef648b206d21\jetified-firebase-installations-17.0.3\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.3] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\7341b5503719715c47a6ef648b206d21\jetified-firebase-installations-17.0.3\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\737c379eb87be0ae361cb52bb65b2ee6\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\737c379eb87be0ae361cb52bb65b2ee6\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\fcd25c7104779fa8372003095385bf1f\jetified-play-services-measurement-impl-21.1.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\fcd25c7104779fa8372003095385bf1f\jetified-play-services-measurement-impl-21.1.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\d115fbc2cc1c6989b623cf4b8464dd7b\jetified-play-services-measurement-sdk-api-21.1.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\d115fbc2cc1c6989b623cf4b8464dd7b\jetified-play-services-measurement-sdk-api-21.1.1\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [:carrier_info] E:\Code\flutter_sport_news_app\build\carrier_info\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:carrier_info] E:\Code\flutter_sport_news_app\build\carrier_info\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from [:carrier_info] E:\Code\flutter_sport_news_app\build\carrier_info\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from [:carrier_info] E:\Code\flutter_sport_news_app\build\carrier_info\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from [:carrier_info] E:\Code\flutter_sport_news_app\build\carrier_info\intermediates\library_manifest\debug\AndroidManifest.xml:10:22-76
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\25426f0fb9e784571a9e3768ae2c9b6a\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
 	android:required
@@ -288,20 +322,6 @@ ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\eaani\.gradle\caches\t
 		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\25426f0fb9e784571a9e3768ae2c9b6a\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
 	android:name
 		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\25426f0fb9e784571a9e3768ae2c9b6a\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-config:21.1.2] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\fab90153a255270ac4e1adccbc47a150\jetified-firebase-config-21.1.2\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\3c1382f7c0fb1fe6d8fadbbc82427811\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\3c1382f7c0fb1fe6d8fadbbc82427811\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-installations:17.0.3] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\7341b5503719715c47a6ef648b206d21\jetified-firebase-installations-17.0.3\AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-installations:17.0.3] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\7341b5503719715c47a6ef648b206d21\jetified-firebase-installations-17.0.3\AndroidManifest.xml:10:5-79
-MERGED from [com.google.android.gms:play-services-measurement:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\737c379eb87be0ae361cb52bb65b2ee6\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\737c379eb87be0ae361cb52bb65b2ee6\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\fcd25c7104779fa8372003095385bf1f\jetified-play-services-measurement-impl-21.1.1\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\fcd25c7104779fa8372003095385bf1f\jetified-play-services-measurement-impl-21.1.1\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\d115fbc2cc1c6989b623cf4b8464dd7b\jetified-play-services-measurement-sdk-api-21.1.1\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.1] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\d115fbc2cc1c6989b623cf4b8464dd7b\jetified-play-services-measurement-sdk-api-21.1.1\AndroidManifest.xml:24:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-config:21.1.2] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\fab90153a255270ac4e1adccbc47a150\jetified-firebase-config-21.1.2\AndroidManifest.xml:25:22-76
 meta-data#com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar
 ADDED from [com.google.firebase:firebase-config:21.1.2] C:\Users\eaani\.gradle\caches\transforms-2\files-2.1\fab90153a255270ac4e1adccbc47a150\jetified-firebase-config-21.1.2\AndroidManifest.xml:32:13-34:85
 	android:value
